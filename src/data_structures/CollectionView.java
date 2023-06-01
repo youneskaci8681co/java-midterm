@@ -1,15 +1,9 @@
 package data_structures;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 public class CollectionView {
-
-    /** INSTRUCTIONS
-     *
-     * A map is given to you below, with some data inserted into it.
-     *
-     * Retrieve the Collection view of the values present in map
-     */
 
     public static void main(String[] args) {
 
@@ -21,6 +15,13 @@ public class CollectionView {
         map.put(1, "NYC");
         map.put(3, "Denver");
 
+        // Retrieve the collection view of the values present in the map
+        Collection<String> values = map.values();
+
+        // Print the values
+        for (String value : values) {
+            System.out.println(value);
+        }
     }
 
 }
